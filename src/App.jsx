@@ -6,7 +6,7 @@ import { ClipLoader } from "react-spinners";
 function App() {
   const [input, setInput] = useState("");
 
-  const debouncedInput = useDebounce(input, 1300);
+  const debouncedInput = useDebounce(input, 400);
   const [recipes, isLoading, isError] = useFetchData(debouncedInput);
   return (
     <>
